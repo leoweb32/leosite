@@ -1,0 +1,2 @@
+[04-Dec-2018 10:56:09 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/leowebco/public_html/wp-content/themes/twentyseventeen/inc/customizer.php on line 122
+[04-Dec-2018 14:15:59 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/leowebco/public_html/wp-content/themes/twentyseventeen/inc/customizer.php on line 122

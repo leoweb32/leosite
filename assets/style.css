@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body{font-family: arial; }
+
+
+
+@font-face {
+    font-family: 'alexandriaflfbold';
+    src: url('assets/fonts/alexandriaflf-bold-webfont.eot');
+    src: url('assets/fonts/alexandriaflf-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/alexandriaflf-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/alexandriaflf-bold-webfont.woff') format('woff'),
+         url('assets/fonts/alexandriaflf-bold-webfont.ttf') format('truetype'),
+         url('assets/fonts/alexandriaflf-bold-webfont.svg#alexandriaflfbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'alexandriaflfregular';
+    src: url('assets/fonts/alexandriaflf-webfont.eot');
+    src: url('assets/fonts/alexandriaflf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/alexandriaflf-webfont.woff2') format('woff2'),
+         url('assets/fonts/alexandriaflf-webfont.woff') format('woff'),
+         url('assets/fonts/alexandriaflf-webfont.ttf') format('truetype'),
+         url('assets/fonts/alexandriaflf-webfont.svg#alexandriaflfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+li{list-style:none;}
+
+h1, h2, h3{font-family: 'alexandriaflfbold';}
+a{text-decoration:none;}
+#top_menu {background-image: url(jpg/banner_designfinal.jpg);background-size: cover; background-repeat:no-repeat;  min-height: 800px; }
+#main_menu{position: relative;  top: -22px;}
+#top_menu .container{ display: grid; grid-template-columns: 22% 54% 25%;}
+#main_menu ul{align-items: center;}
+#main_menu li{float:left; list-style: none; margin-left: 20px; }
+#main_menu a{ text-decoration: none; color:#707070; font-size: 1.4rem; padding:4rem 1.5rem 0.8rem; display: block; font-family: 'alexandriaflfregular';}
+#main_menu a:hover{color:#fff;}
+
+.m_project:hover {background-color:#F3BA07;}
+.m_about:hover {background-color:#02A498;}
+.m_article:hover{background-color:#333;}
+.m_contact:hover{background-color:#0083D5;} 
+
+
+.social{float:left; list-style: none; margin: 0; padding: 0px}
+.social li{list-style:none; width:50px; margin-left: 3px; height: 50px; float: left;}
+.facebook{background-image:url(jpg/icones_social.png); background-repeat: no-repeat; background-position:-213px 0; }
+.behance{background-image:url(jpg/icones_social.png); background-repeat: no-repeat; background-position:-54px 0;}
+.google_plus{background-image:url(jpg/icones_social.png); background-repeat: no-repeat; background-position:-106px 0;}
+.linkedin{background-image:url(jpg/icones_social.png);  background-repeat: no-repeat; background-position:-160px 0;}
+.instagram{background-image:url(jpg/icones_social.png); background-repeat: no-repeat; background-position:0;}
+
+.img_design{max-width:1440px; width:90%; display: block; margin: auto; }
+
+.portfolio { background-color: #F3BA07; color: #FFFFFF; padding-top: 2rem;}
+.portfolio h2 { margin: auto;text-align: center; font-size:40px;}
+.gallery{ width:100%;}
+.item_port{background-color:#000; margin: 0; display: inline-block; width: 24.85%; min-height: 6rem;}
+.item{margin:0; padding: 0;}
+.item figcaption{display:none;}
+.item_port img {width: 100%; height: auto;}
+
+.aboutme{background-color:#02A498; color:#FFFFFF; padding: 3rem 0;}
+#photo_profile{width:30%; display: inline-block;}
+#about_profile{display: inline-block; width:65%; padding: 3rem 2rem;}
+#about_profile h2{ font-size:40px;}
+
+#menu_port{margin: 10px auto; display: table; }
+#menu_port li{list-style: none; margin-left: 10px; float: left;}
+#menu_port a{color:#ffffff;}
+
+.articles{background-color:#FCFCFC; padding: 3rem 0;}
+.articles h2 {text-align: center; font-size: 40px; color:#F44E29;}
+.articles .container{display:grid; grid-template-columns: 25% 25% 25% 25%;}
+.item_article{background-color:#F4F4F4; margin: 1rem 10px; text-align: center; display: block;}
+.item_article img{width:100%; height: auto; padding: 0 -2rem;}
+.item_article h2{color:#F44E29; font-size: 25px;}
+.content_marg{padding: 0rem 2rem 2rem;}
+.calltoaction{ background-color:#F44E29; color:#fff; padding: 0.5rem 1rem;}
+.calltoaction a{color:#fff;}
+.out{margin:2rem auto; display: table;}
+
+.data_contact li{ text-align:10px;}
+
+.contact{background-color:#0083D5; color:#FFFFFF; padding: 2rem 0;}
+.contact h2{text-align: center; font-size:40px;}
+.data_contact{width:30%; display: inline-block; text-align: center;}
+.form_contact{width:69%; display: inline-block;}
+.form_contact form{border-radius: 20px; width: 47%; background-color: #9EC8E2; margin: auto; padding: 2rem 0.2rem 2rem 4.5rem;}
+.form_contact li{list-style:none; margin-bottom: 6px;}
+.form_contact input,.form_contact textarea{background:#C7E7FA; border: 1px solid #FFFFFF; border-radius: 5px; width:80%;}
+.form_contact input{height:30px;}
+
+/*Classes gerais da estrutura*/
+.container{width:1440px; margin: auto;}
+
+
+/** Media query responsive **/
+/*Notebook*/
+@media (max-width:1400px){
+.container{width:1400px;}	
+}
+
+/*Notebook menor*/
+@media (max-width:1280px){	
+.container{width:1200px;}
+}
+
+/*ipad deitada e netbook*/
+@media (max-width:960px){	
+.container{width:1200px;}
+.item_port{width:33%;}
+}
+
+
+/*ipad*/
+@media (max-width:768px){
+#photo_profile{width:100%; display:block;}
+#about_profile{display: block; width:100%}	
+.articles .container{grid-template-columns: 50% 50%;}	
+.container{width:100%;}	
+.item_port{width:49%;}	
+.data_contact{width:100%; display:block; margin: 1rem 0;}
+.form_contact{width:100%; display:block; margin: 1rem 0;}	
+}
+
+/*iphone 6/7/8*/
+@media (max-width:420px){
+.container{width:100%;}	
+.articles .container{grid-template-columns: 100%;}	
+.item_port{width:99%;}		
+}
+
+/*iphone 5*/
+@media (max-width:320px){
+.container{width:100%;}		
+}
