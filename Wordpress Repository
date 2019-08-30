@@ -1,0 +1,25 @@
+/*Listar termos de taxonomia*/
+
+<?php $Terms = get_terms('NOME DA TAXONOMIA', array('hide_empty' => 0, 'parent' =>0));  
+foreach($Terms as $Term) : ?>
+  <a href="<?php echo get_term_link( $Term->slug, $Term->taxonomy ); ?>"><?php echo $Term->name; ?></a>   
+<?php endforeach;?>  
+
+
+/*Listar conteudo de um post type*/
+    <?php 
+                $posts = get_posts(array(
+                    'orderby'   => 'asc',
+                    'post_type'	=> 'clientes',
+                    'posts_per_page' => 4,
+                    'orderby'=>'title',
+                    'order'=>'asc'
+                        ));
+            if( $posts ): ?>
+            <ul class="list_client">
+            <?php foreach( $posts as $post ): setup_postdata( $post );?>
+                <li><img src="<?php echo the_post_thumbnail_url() ?>" alt='<?php the_title() ?>'></li>
+    <?php endforeach; ?>
+  </ul>
+<?php wp_reset_postdata(); ?>
+<?php endif; ?>
